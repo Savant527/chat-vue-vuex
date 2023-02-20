@@ -1,4 +1,4 @@
-import getters from './getters'
+import getters from './getters';
 
 const module = {
   namespaced: true,
@@ -29,10 +29,30 @@ const module = {
           read: false,
           channelId: 2
         },
+        {
+          id: 4,
+          author: 1,
+          message: 'Mi mensaje',
+          timestamp: new Date().toLocaleTimeString(),
+          read: false,
+          channelId: 2
+        },
       ]
     }
   },
-  getters
+  // mutations: {
+  //   addMessage(state, newMessage) {
+  //     state.messages.push({
+  //       id: Date.now(),
+  //       author: 1,
+  //       message: newMessage.message,
+  //       timestamp: new Date().toLocaleTimeString(),
+  //       read: true,
+  //       channelId: parseInt(newMessage.channelId),
+  //     });
+  // },
+  
+  getters,
 }
 
 export default module
